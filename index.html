@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <script src="https://kit.fontawesome.com/c74022c18c.js" crossorigin="anonymous"></script>
+    
+  </head>
+  <body>
+    <div id="page">
+      <nav class="mobile-nav list-group">
+        <a class="list-group-item list-group-item-action active mobile-nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="list-group-item list-group-item-action mobile-nav-link" href="#services">Services</a>
+        <a class="list-group-item list-group-item-action mobile-nav-link" href="#portfolio">Portfolio</a>
+        <a class="list-group-item list-group-item-action mobile-nav-link" href="#about">About</a> <!-- &nbsp  no break -->
+        <a class="list-group-item list-group-item-action mobile-nav-link" href="#team">Team</a>
+        <a class="list-group-item list-group-item-action mobile-nav-link" href="#contact">Contact</a>
+      </nav>
+        <header class="page-header">
+          <div class="container">
+              <nav class="navbar navbar-expand-sm navbar-dark">
+                  <!-- navbar-expand bis wann sollen die nebenpunkte angezeigt werden -->
+                  <a class="navbar-brand" href="#">Golden</a>
+                  <button id="toggle-mobile-nav" class="navbar-toggler" type="button"  aria-label="Toggle navigation(screen reader)">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                  <!-- code untersuchen-> flex box-> in der doc suchen -->
+                    <div class="navbar-nav">                     
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#services">Services</a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-link" href="#about">About</a> <!-- &nbsp  no break -->
+                        <a class="nav-link" href="#team">Team</a>
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </div>
+                  </div>
+              </nav>
+              <div class="d-flex flex-column jumbotron header-jumbotron text-center justify-content-center align-items-center " >
+                  <h5 class="display-5">Herlich Willkommen!</h5 >
+                  <h4 class="display-4">Wir entwickeln Webseiten.</h4>
+                  <a class="btn btn-primary" href="#services" role="button">Weitere Informationen</a>
+              </div>
+          </div>
+        </header>
+        <!-- --------------------------------------SERVICES------------------------------------------------------ -->
+        <section class="services">
+          <a name="services"></a>
+          <div class="container">
+          <!-- damit Inhalt zentriert ist -->
+              <h3 class="text-center">Dienstleistungen</h3>
+              <!-- text-center ist in bootrap standard -->
+              <p class="text-center text-muted font-italic mb-5">Wir bieten tolle Dienstleistungen an</p> 
+              <!-- (mb-5 spacing bootstrap) -->
+              <div class="row">
+                  <div class="col-sm">
+                    <div class="services-icon"> 
+                      <!-- eigenes div um individuell gestalten zu können -->
+                    <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <h4 class="text-center ">E-Commerce</h4>
+                    <p class="text-center font-italic">Wir entwickeln schicke Online-Shops, die ihre Produkte gut verkaufen. So erzielen Sie Top Umsätze.</p>
+                  </div>
+                  <div class="col-sm">
+                    <div class="services-icon">
+                    <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h4 class="text-center">Responsive Web</h4>
+                    <p class="text-center font-italic">Unsere Webseiten sehen überall gut aus: Egal ob auf dem Tablet, Desktop oder Handy</p>
+                  </div>
+                  <div class="col-sm">
+                    <div class="services-icon"> 
+                      <i class="fas fa-lock"></i>
+                    </div>
+                  <h4 class="text-center ">Sicherheit</h4>
+                  <p class="text-center font-italic">Auf Sicherheit legen wir viel wert. Bla bla bla.</p>
+                  </div>
+                </div>
+          </div>
+        </section>
+        <!-- ------------------------------------------PORTFOLIO------------------------------------------------- -->
+        <section class="portfolio">
+          <a name="portfolio"></a>
+          <div class="container">
+            <h3 class="text-center font-weight-bold">Unser Portfolio</h3>
+            <p class="text-center font-italic text-muted">Proin iaculis purus consequat sem cure.</p>
+                    
+            <div class="row text-center">
+              <div class="mb-5 col-12 col-sm-6 col-md-4">
+                <div class="card">
+                  <img src="images/adventure-daylight-girl-1462014.jpg" class="card-img-top" alt="...">
+                  <div class=" card-body">
+                    <h6 class="font-weight-bold mb-0">Ebony & Ivory</h6>
+                    <p class="card-text font-italic">Branding</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="card">
+                  <img src="images/aerial-view-color-daylight-1125278.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h6 class="font-weight-bold mb-0">Smart Stationary</h6>
+                    <p class="card-text font-italic">Print Design</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="card">
+                  <img src="images/architecture-basilica-buildings-326709.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h6 class="font-weight-bold mb-0">Clever Poster</h6>
+                    <p class="card-text font-italic">Print Design</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row text-center">
+              <div class="col-sm-6 col-md-4">
+                <div class="card" >
+                  <img src="images/architecture-building-buildings-264706.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="card" >
+                  <img src="images/ballpen-blur-bokeh-834897.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="card">
+                  <img src="images/breakfast-citrus-close-up-1435740.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          </div>
+        </section>
+        <!-- -------------------------------------------- ABOUT US-------------------------------------------------- -->
+        <section class="aboutus">
+          <a name="about"></a>
+          <div class="container">
+          <h3 class="text-center font-weight-bold">Über uns</h3>
+          <p class="text-center font-italic text-muted">Das ist unsere Geschichte.</p>
+          <div class="aboutus-list">
+            <div class="row mb-3">
+              <div class="col-6 col-sm-3 col-md-2 offset-3 offset-sm-0 order-1 order-md-2"> 
+                <!-- offset-3 für kleinsten bildschirm, sm-nächstgrößere stufe -->
+                <!-- ist nun genau mittig-> 12 spalten volle breite -->
+                <img class= "mb-2 aboutus-image img-fluid"src="images/aboutus/architektur-gebaude-hochhaus-599459.jpg" alt="Platzhalter1" />
+              </div>
+              <div class="text-sm-left text-center col-12 col-sm-9 col-md-5 order-2 order-md-1 text-md-right">
+              <h5 class="h6 text-sm-left text-center text-md-right mb-0">Juli 2010</h5>
+              <h6 class="text-sm-left text-center text-md-right">Unsere Anfänge</h6>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-6 col-sm-3 col-md-2 offset-3 offset-sm-0 offset-md-5"> 
+                <img class= "mb-2 aboutus-image img-fluid" src="images/aboutus/berge-canyon-dammerung-965154.jpg" alt="Platzhalter1" />
+              </div>
+              <div class="text-sm-left text-center col-12 col-sm-9 col-md-5 text-md-left">
+              <h5 class="h6 text-sm-left text-center text-md-left mb-0">Juli 2010</h5>
+              <h6 class="text-sm-left text-center text-md-left">Unsere Anfänge</h6>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-6 col-sm-3 col-md-2 offset-3 offset-sm-0 order-1 order-md-2"> 
+                  <img class= "mb-2 aboutus-image img-fluid"src="images/aboutus/architektur-gebaude-hochhaus-599459.jpg" alt="Platzhalter1" />
+              </div>
+              <div class="text-sm-left text-center col-12 col-sm-9 col-md-5 order-2 order-md-1 text-md-right">
+              <h5 class="h6 text-sm-left text-center text-md-right mb-0">Juli 2010</h5>
+              <h6 class="text-sm-left text-center text-md-right">Unsere Anfänge</h6>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+              </div>
+            </div>
+            <div class="row mb-4 bg-white">
+              <div class="col-6 col-sm-3 col-md-2 offset-3 offset-sm-0 offset-md-5"> 
+                <img class= "mb-2 aboutus-image img-fluid" src="images/aboutus/dammerung-draussen-felsen-946351.jpg" alt="Platzhalter1" />
+              </div>
+              <div class="text-sm-left text-center col-12 col-sm-9 col-md-5 text-md-left">
+              <h5 class="h6 text-sm-left text-center text-md-left mb-0">Juli 2010</h5>
+              <h6 class="text-sm-left text-center text-md-left">Unsere Anfänge</h6>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+              </div>
+            </div>
+
+          </div>
+          </div>
+        </section>
+      <!-- ------------------------------------------TEAM-------------------------------------------- -->
+        <section class="team">
+          <a name="team"></a>
+          <div class="container">
+            <h3 class="text-center font-weight-bold mb-3">Unser fantastisches Team</h3>
+            <p class="text-center font-italic text-muted">Proin iaculis purus consequat sem cure.</p>
+        
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="text-center">
+                  <img class="mb-3 team-image img-fluid" src="images/team/auge-bezaubernd-dogen-1044054.jpg"/>
+                        <h5 class="text-center">Lien Nguyen</h5>
+                        <h6 class="text-center text-muted">Marketer</h6>
+                </div>
+                <div class="mb-3 mt-3">
+                  <div class="d-flex col justify-content-center">
+                    <div class="team-icons mr-2"> <i class="fab fa-twitter"></i> </div>
+                    <div class="team-icons"> <i class="fab fa-facebook-f"></i></div>
+                    <div class="team-icons ml-2"> <i class="fab fa-pinterest-p"></i> </div>
+      
+                  </div>
+      
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="text-center">
+                  <img class="mb-3 team-image img-fluid" src="images/team/augen-bezaubernd-draussen-356378.jpg"/>
+                        <h5 class="text-center">Tuan Son Dinh</h5>
+                        <h6 class="text-center text-muted">CEO</h6>
+                </div>
+                <div class="mb-3 mt-3">
+                  <div class="d-flex col justify-content-center">
+                    <div class="team-icons mr-2"> <i class="fab fa-twitter"></i> </div>
+                    <div class="team-icons"> <i class="fab fa-facebook-f"></i></div>
+                    <div class="team-icons ml-2"> <i class="fab fa-pinterest-p"></i> </div>
+      
+                  </div>
+      
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="text-center">
+                  <img class="mb-3 team-image img-fluid" src="images/team/halsband-haustier-hund-8700.jpg"/>
+                        <h5 class="text-center">Luan Nguyen</h5>
+                        <h6 class="text-center text-muted">Schwuchtel</h6>
+                </div>
+                <div class="mb-3 mt-3">
+                  <div class="d-flex col justify-content-center">
+                    <div class="team-icons mr-2"> <i class="fab fa-twitter"></i> </div>
+                    <div class="team-icons"> <i class="fab fa-facebook-f"></i></div>
+                    <div class="team-icons ml-2"> <i class="fab fa-pinterest-p"></i> </div>
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+          
+            <p class="text-muted text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</p>
+          </div>
+        </section>
+        <!-- -----------------------------------CONTACT US------------------------------------------------------ -->
+        <section class="contactus">
+          <a name="contact"></a>
+          <div class="container">
+            <h3 class="text-center font-weight-bold mb-2">Kontaktiere uns!</h3>
+            <p class="text-center font-italic text-muted pb-3">Proin iaculis purus consequat sem cure.</p>
+          
+            <form method="GET" action="#">
+
+            
+            <div class="row">
+              <div class="col-12 col-sm-6">
+                <input class="form-control mb-3" type="text" name="name" placeholder="Dein Name *" required />
+                <input class="form-control mb-3" type="text" name="email" placeholder="Deine E-Mail *" required/>
+                <input class="form-control mb-3 mb-sm-0" type="text" name="subject" placeholder="Betreff *" required />
+                
+
+              </div>
+              <div class="col-12 col-sm-6">
+                <textarea class="form-control mb-3" required placeholder="Deine Nachricht an uns." name="message"></textarea>
+
+
+              </div>
+            </div>
+            <div class="text-center mt-4"> <button type="submit" class="btn btn-primary">Nachricht abschicken</button>
+            </div>
+            </form>
+        
+        </div>
+        </section>
+        <footer>
+          <div class="row mt-3">
+            <div class="col-12 col-lg-4">
+              <p class="text-center">&copy; Copyright 2020 DinhWorx.com</p>
+            </div>
+            <div class="col-12 col-lg-4 ">
+              <div class= "d-flex justify-content-center text-center mb-4">
+                <a class="d-flex mr-3 flex-column justify-content-center footer-icon " href="#" ><i class="fab fa-twitter"></i> </a>
+                <a class="d-flex flex-column justify-content-center footer-icon " href="#" ><i class="fab fa-facebook-f"></i> </a>
+                <a class="d-flex ml-3 flex-column justify-content-center footer-icon " href="#" ><i class="fab fa-pinterest-p"></i> </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+     
+   
+
+
+
+
+
+
+
+
+    <!-- jquery ganz am ende laden, sonst verlangsamt dies den Seitenaufbau. -->
+    <script type="text/javascript" src="jquery/jquery-3.4.1.min.js"></script>
+    <!-- bundle beinhalt popper und bootstrap -->
+    <script type="text/javascript" src="bootstrap-4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
